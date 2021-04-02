@@ -265,10 +265,97 @@
 .footer h6 {
   font-family: "nunito sans";
   font-size: 25px;
+  font-weight: 600;
   color: #696969;
   text-shadow: 1px 1px 1px #696969;
 }
 .footer h5 {
   font-family: "nunito sans";
   transform: translateY(-800%);
+  font-weight: 600;
+  color: #696969;
+}
+/*********************************************/
+/*************TEAM PAGE STARTS****************/
+/*********************************************/
+.team-background {
+  background-image: linear-gradient(to right, white, #cbeaff);
+}
+.team-paragraph {
+  font-family: "Nunito Sans";
+  color: #444443;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 1px 2px #696969;
+}
+.team-paragraph h1 {
+  font-size: 4vw;
+}
+.team-paragraph p {
+  font-weight: 600;
+}
+
+.carousel {
+  position: relative;
+  height: 600px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-track-container {
+  height: 100%;
+}
+
+.carousel-track {
+  pad: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(135%);
+  background: transparent;
+  height: 100px;
+  border-radius: 5px;
+}
+.carousel-button--left {
+  left: -25px;
+}
+.carousel-button--right {
+  right: -30px;
+}
+.carousel-button img {
+  width: 12px;
+}
+.carousel-nav {
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  transform: translateX(8.5%);
+}
+
+.carousel-indicator {
+  border: 0;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  background: black;
+  margin: 0 12px;
 }
