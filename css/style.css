@@ -113,16 +113,20 @@
   height: auto;
 }
 .vision2 {
+  
 }
 .vision2 h3 {
   font-family: "Nunito Sans";
-  text-align: center;
+  text-align: end;
+  font-size: 3vw;
 }
 .vision2 p {
   font-weight: lighter;
   font-family: "Nunito Sans";
   color: #000000;
   text-align: center;
+  font-weight: 600;
+  text-align: end;
 }
 /*********************************************/
 /*****************PARA1 ENDS******************/
@@ -142,6 +146,8 @@
   padding: 15px;
   color: #444443;
   text-underline-offset: 3px;
+  font-weight: 800;
+  text-shadow: 1px 1px 1px #696969;
 }
 .prob-sol h1 {
   font-size: 15px;
@@ -200,6 +206,8 @@
   opacity: 0;
   transition: 0.5s ease;
   background-color: #e9f7ff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #696969;
 }
 .text-overlay {
   font-family: "Nunito Sans";
@@ -212,9 +220,7 @@
   display: flex;
   text-align: center;
 }
-.solutions p{
-  font-weight: 600;
-}
+
 .front-cover img {
   display: block;
   width: auto;
@@ -238,11 +244,13 @@
 .solutions h2 {
   font-family: "Nunito Sans";
   margin-top: 100px;
+  color: #444443;
+  text-shadow: 1px 1px 2px #696969;
 }
 
 .solutions p {
-  font: 1em sans-serif;
-  color: #696969;
+  font-weight: 600;
+  color: #383838;
   font-family: "Nunito Sans";
   margin-top: ;
 }
@@ -315,7 +323,7 @@
 
 .home-allign p {
   font-family: "Nunito sans";
-  font-weight: 400;
+  font-weight: 600;
   color: #444443;
   text-shadow: 1px 1px 3px #696969;
   font-size: 3vw;
@@ -337,14 +345,7 @@
 .home-allign-2 {
   background-image: linear-gradient(to left, white, #cbeaff);
 }
-.home-allign h2 {
-  font-family: "Nunito sans";
-  font-weight: 700;
-  color: #8eab3d;
-  text-shadow: 1px 1px 3px #696969;
-  font-size: 3.5vw;
-  width: 70%;
-}
+
 
 .home-allign-2 p {
   font-family: "Nunito sans";
@@ -432,14 +433,14 @@
 }
 .produce-img img {
   width: 50%;
-  transform: translateX(190%) translateY(-70%);
+  transform: translateX(200%) translateY(-90%);
 }
 .produce-img-rev {
   padding-left: 200px;
 }
 .produce-img-rev img {
   width: 60%;
-  transform: translateX(-100%) translateY(-60%);
+  transform: translateX(-120%) translateY(-120%);
 }
 .team-background-second .line-in-between {
   border: 1px solid #b9b9b9;
@@ -492,8 +493,9 @@
 }
 .get-in-touch p {
   font-weight: 400;
-  font-size: 1.5vw;
+  font-size: 2.5vw;
   color: #444443;
+  width: 50%;
 }
 
 .get-in-touch .produce-img {
