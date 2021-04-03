@@ -30,7 +30,7 @@
       rel="stylesheet"
       href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css"
     />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -73,34 +73,38 @@
           </div>
         </div>
       </div>
-      <div class="carousel">
-
-        <button class="carousel-button carousel-button--left">
+    </div>
+    <div class="carousel">
+      <button class="carousel__button carousel__button--left">
+        <img src="img/whatsapp_vector.png" alt="">
+      </button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+           <li class="carousel__slide">
+            <img class="carousel__img" src="img/desk.png" alt="">
+          </li>
+          <li class="carousel__slide">
+            <img class="carousel__img" src="img/desk.png" alt="">
+          </li>
+          <li class="carousel__slide">
+            <img class="carousel__img" src="img/desk.png" alt="">
+           </li>
+           <li class="carousel__slide">
+            <img class="carousel__img" src="img/desk.png" alt="">
+           </li>
+          </ul>
+        </div>
+        <button class="carousel__button carousel__button--right">
           <img src="img/whatsapp_vector.png" alt="">
         </button>
 
-        <div class="carousel-track-container">
-          <ul class="carousel-track">
-            <li class="carousel-slide">
-            <img class="carousel-img" src="img/desk.png" alt="">
-            </li>
-            <li class="carousel-slide">            
-              <img class="carousel-img" src="img/desk.png" alt="">
-            </li>
-            <li class="carousel-slide">
-              <img class="carousel-img" src="img/desk.png" alt="">
-            </li>
-          </ul>
+        <div class="carousel__nav">
+          <button class="carousel__indicator current-slide"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
         </div>
-
-        <button class="carousel-button carousel-button--right"><img src="img/whatsapp_vector.png" alt="">
-        </button>
-
-        <div class="carousel-nav">
-          <button class="carousel-indicator"></button>
-          <button class="carousel-indicator"></button>
-          <button class="carousel-indicator"></button>
-        </div>
-      </div>
+        
+    </div>
+    
   </body>
 </html>
