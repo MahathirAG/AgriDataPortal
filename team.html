@@ -30,7 +30,7 @@
       rel="stylesheet"
       href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css"
     />
-    
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -38,22 +38,23 @@
       rel="stylesheet"
       href="bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"
     />
-    <div class="team-background col-md-12">
+    <div style="padding-bottom: 100px" class="team-background">
       <div class="container">
         <div class="row">
-          <div class="header">
-            <div class="left-side">
-              <a href="index.html"
-                ><img src="img/Agridata Logo 1.png" alt=""
-              /></a>
-            </div>
-            <div class="centre">
-              <a href="team.html"><h3>Team</h3></a>
-              <a href="work.html"><h3>Work</h3></a>
-            </div>
-            <div class="right-side">
-              <a href="contact.html"><img src="img/Group 10.png" alt="" /></a>
-            </div>
+          <!--<div class="col-2 header">-->
+          <div class="col-2 left-side">
+            <a href="index.html" ;
+              ><img id="bababui" src="img/Agridata Logo 1.png" alt=""
+            /></a>
+          </div>
+          <div class="col-8 centre">
+            <a href="team.html"><h3>Team</h3></a>
+            <a href="work.html"><h3>Work</h3></a>
+          </div>
+          <div class="col-2 right-side">
+            <a href="contact.html"
+              ><img id="bababui" src="img/Group 10.png" alt=""
+            /></a>
           </div>
         </div>
       </div>
@@ -74,37 +75,55 @@
         </div>
       </div>
     </div>
-    <div class="carousel">
-      <button class="carousel__button carousel__button--left">
-        <img src="img/whatsapp_vector.png" alt="">
-      </button>
-      <div class="carousel__track-container">
-        <ul class="carousel__track">
-           <li class="carousel__slide">
-            <img class="carousel__img" src="img/desk.png" alt="">
-          </li>
-          <li class="carousel__slide">
-            <img class="carousel__img" src="img/desk.png" alt="">
-          </li>
-          <li class="carousel__slide">
-            <img class="carousel__img" src="img/desk.png" alt="">
-           </li>
-           <li class="carousel__slide">
-            <img class="carousel__img" src="img/desk.png" alt="">
-           </li>
-          </ul>
-        </div>
-        <button class="carousel__button carousel__button--right">
-          <img src="img/whatsapp_vector.png" alt="">
-        </button>
+    <div class="team-background">
+      <div class="">
+        <div class="carousel">
+          <button class="carousel__button carousel__button--left is-hidden">
+            <img src="img/whatsapp_vector.png" alt="" />
+          </button>
+          <div class="carousel__track-container">
+            <ul class="carousel__track">
+              <li class="carousel__slide current-slide">
+                <button style="background-color: transparent; border: 0">
+                  <img class="carousel__img" src="img/6 4.png" alt="" />
+                </button>
+              </li>
+              <li class="carousel__slide current-slide">
+                <button style="background-color: transparent; border: 0">
+                  <img class="carousel__img" src="img/4 6.png" alt="" />
+                </button>
+              </li>
+              <li class="carousel__slide current-slide">
+                <button style="background-color: transparent; border: 0">
+                  <img class="carousel__img" src="img/2 7.png" alt="" />
+                </button>
+              </li>
+              <li class="carousel__slide current-slide">
+                <button style="background-color: transparent; border: 0">
+                  <img class="carousel__img" src="img/3 7.png" alt="" />
+                </button>
+              </li>
+              <li class="carousel__slide current-slide">
+                <button style="background-color: transparent; border: 0">
+                  <img class="carousel__img" src="img/5 5.png" alt="" />
+                </button>
+              </li>
+            </ul>
+          </div>
+          <button class="carousel__button carousel__button--right">
+            <img src="img/whatsapp_vector.png" alt="" />
+          </button>
 
-        <div class="carousel__nav">
-          <button class="carousel__indicator current-slide"></button>
-          <button class="carousel__indicator"></button>
-          <button class="carousel__indicator"></button>
+          <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+          </div>
         </div>
-        
+      </div>
     </div>
-    
+    <script src="carousel.js"></script>
   </body>
 </html>
