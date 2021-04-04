@@ -258,6 +258,7 @@
   border-bottom: 1px solid black;
   left: 10%;
 }
+
 .solutions .container {
   display: flex;
   justify-content: center;
@@ -361,9 +362,9 @@
   width: 80%;
 }
 .home-allign-img img {
-  width: 80%;
+  width: 70%;
   height: auto;
-  transform: translateY(-30%) translateX(65%);
+  transform: translateY(-30%) translateX(55%);
 }
 .home-allign-2 {
   background-image: linear-gradient(to left, white, #cbeaff);
@@ -425,6 +426,7 @@
 }
 .team-background-second {
   background-image: linear-gradient(to right, #cbeaff, white);
+  padding: 10px;
 }
 .team-background-second h1 {
   font-family: "nunito sans";
@@ -452,11 +454,11 @@
   text-shadow: 1px 1px 1px #696969;
 }
 .produce-img {
-  width: 70%;
+  width: 65%;
 }
 .produce-img img {
   width: 50%;
-  transform: translateX(200%) translateY(-90%);
+  transform: translateX(180%) translateY(-90%);
 }
 .produce-img-rev {
   padding-left: 200px;
@@ -473,6 +475,13 @@
   margin-top: -60px;
   display: flex;
   justify-content: center;
+}
+.second-header{
+  background-color: white;
+  
+}
+.white{
+  background-color: white;
 }
 .second-header .left-side {
   margin-top: 50px;
@@ -506,6 +515,7 @@
   margin-top: 80px;
   width: 100%;
   height: auto;
+  padding-left: 2.5%;
 }
 .get-in-touch h2 {
   font-weight: 700;
@@ -700,3 +710,8 @@
   background: transparent;
 }
 
+.line-up-index {
+  padding: 5% 10% 5% 10%;
+  display: flex;
+  justify-content: space-between;
+} 
