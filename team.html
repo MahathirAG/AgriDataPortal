@@ -34,13 +34,13 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="flickity.css" media="screen" />
   </head>
-  <body>
+  <body class="team-background">
     <script src="flickity.pkgd.js"></script>
     <link
       rel="stylesheet"
       href="bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"
     />
-    <div style="padding-bottom: 100px" class="team-background">
+    <div style="padding-bottom: 100px">
       <div class="container">
         <div class="row line-up-index">
           <!--<div class="col-2 header">-->
@@ -59,7 +59,6 @@
             /></a>
           </div>
         </div>
-        
       </div>
       <div class="container">
         <div class="row">
@@ -80,9 +79,52 @@
     </div>
     <div class="gallery js-flickity team-background">
       <div class="gallery-cell">
-        <button>
-          <img src="img/6 4.png" alt="" />
-        </button>
+        <img id="myImg" src="img/6 4.png" alt="" style="width: auto" />
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01" />
+          <div class="centered">
+            <h1>Matthew Johnny Kulai</h1>
+            <p>
+              Matthew is the founder of Hinsou Farm. Growing up in a humble home
+              surrounded by nature, Matt eventually found a passion for
+              agriculture and became a young agropreneur. He specializes in
+              organic produce and manages avocado, sacha inchi and ginger
+              plantation. He also oversees a process centre for sacha inchi oil.
+            </p>
+            <p>
+              Matt was a graduate of Swansea University, with a Bachelor’s
+              degree in Materials Engineeering.
+            </p>
+          </div>
+          <div id="caption"></div>
+        </div>
+      </div>
+      <div class="gallery-cell">
+        <img id="myImg" src="img/6 4.png" alt="" style="width: auto" />
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01" />
+          <div class="centered">
+            <h1>Matthew Johnny Kulai</h1>
+            <p>
+              Matthew is the founder of Hinsou Farm. Growing up in a humble home
+              surrounded by nature, Matt eventually found a passion for
+              agriculture and became a young agropreneur. He specializes in
+              organic produce and manages avocado, sacha inchi and ginger
+              plantation. He also oversees a process centre for sacha inchi oil.
+            </p>
+            <p>
+              Matt was a graduate of Swansea University, with a Bachelor’s
+              degree in Materials Engineeering.
+            </p>
+          </div>
+          <div id="caption"></div>
+        </div>
       </div>
       <div class="gallery-cell">
         <button>
@@ -105,6 +147,28 @@
         </button>
       </div>
     </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      };
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+    </script>
     <!--<div class="team-background">
       <div class="">
         <div class="carousel">
