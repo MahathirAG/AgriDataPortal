@@ -656,7 +656,7 @@
   border-radius: 50%;
   width: 15px;
   height: 15px;
-  background: rgb(121, 121, 121);
+  background: transparent;
   margin: 0 12px;
   cursor: pointer;
 }
@@ -664,3 +664,39 @@
   background: rgb(31, 30, 30);
 }
 .is-hidden {display: none;}
+.gallery {
+  background-image: linear-gradient(to right, white, #cbeaff);
+}
+
+.gallery-cell button{
+  width: 28%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+
+
+}
+.gallery-cell img{
+ 
+}
+
+.gallery-cell.is-selected {
+  background:transparent;
+}
+
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: ;
+  line-height: 200px;
+  font-size: 80px;
+  color: rgb(0, 0, 0);
+}
+.gallery-cell button{
+  border: transparent;
+  background: transparent;
+}
+
