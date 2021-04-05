@@ -342,6 +342,9 @@
 }
 
 .home-allign {
+ text-align: center;
+ display: flex;
+ justify-content: center;
 }
 
 .team-background .home-allign h2 {
@@ -349,9 +352,14 @@
   font-weight: 700;
   color: #8eab3d;
   text-shadow: 1px 1px 3px #696969;
-  font-size: 5.5vw;
+  font-size: 4.5vw;
   width: 70%;
 }
+.what-it-is{
+  justify-content: center; display: flex;
+  
+}
+
 
 .home-allign p {
   font-family: "Nunito sans";
@@ -367,12 +375,13 @@
   height: auto;
 }
 .home-allign-img {
-  width: 80%;
+  flex-direction: row;
+  display: flex;
+  width: 65%;
 }
 .home-allign-img img {
   width: 80%;
-  height: auto;
-  transform: translateY(-30%) translateX(50%);
+  
 }
 .home-allign-2 {
   background-image: linear-gradient(to left, white, #cbeaff);
