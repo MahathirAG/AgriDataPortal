@@ -33,6 +33,21 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="flickity.css" media="screen" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="team-background">
     <script src="flickity.pkgd.js"></script>
@@ -41,25 +56,115 @@
       href="bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"
     />
     <div style="padding-bottom: 100px">
-      <div class="container">
-        <div class="row line-up-index">
-          <!--<div class="col-2 header">-->
-          <div class="col-2 left-side">
-            <a href="index.html" ;
-              ><img id="bababui" src="img/Agridata Logo 1.png" alt=""
-            /></a>
-          </div>
-          <div class="col-8 centre">
-            <a href="team.html"><h3>Team</h3></a>
-            <a href="work.html"><h3>Work</h3></a>
-          </div>
-          <div class="col-2 right-side">
-            <a href="contact.html"
-              ><img id="bababui" src="img/Group 10.png" alt=""
-            /></a>
+      <div class="row line-up-index">
+        <!--<div class="col-2 header">-->
+        <div class="col-2 left-side">
+        
+          <button style="width: 150%; height: auto; border:transparent; background: transparent;">
+        <a href="index.html" ;
+            ><img id="bababui" src="img/Agridata Logo 1.png" alt=""
+          /></a>
+       
+        </button>
+        </div>
+        <div class="col-8 centre">
+          <a href="team.html"><h3>Team</h3></a>
+          <a href="work.html"><h3>Work</h3></a>
+        </div>
+        <div class="col-2 right-side">
+          <button style="width: 150%; height: auto;"
+          type="button"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#pleModal"
+        >
+        <img id="bababui" src="img/Group 10.png" alt=""
+        />
+        </button>
+
+        <!-- Modal -->
+        <div
+        style="transform: translateX(30%) translateY(50%); height: 50%"
+          class="modal fade"
+          id="pleModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div 
+                style="width: 200%; padding-top: 10%;"
+                class="modal-body2">
+                  <div class="container">
+                    <div class="row">
+                      <div class="hello-there">
+                        <h1>HELLO THERE!</h1>
+                        <p>We care about MAKING AN IMPACT and we care about YOU!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container papii">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div>
+                          <h3>Join for Internship</h3>
+                          <p>
+                            Send us your CV and we’ll let you know how you can contribute to
+                            AgriData making the change
+                          </p>
+                          <p>people@agridataportal.com</p>
+                        </div>
+                        <div style="margin-left: 100px">
+                          <h3>Any inquiries?</h3>
+                          <p>
+                            For any questions, feedbacks or anything you want to tell us,
+                            don’t hesitate to contact us here!
+                          </p>
+                          <p>contactus@agridataportal.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                  style="background: white;"
+                  class="contact-footer">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-12 imgr">
+                          <a href=""><img src="img/Group 113.png" alt="" /></a>
+                          <a href=""><img src="img/Group 111.png" alt="" /></a>
+                          <a href=""><img src="img/Group 109.png" alt="" /></a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        </div>
+
+        
       </div>
+
+      
       <div class="container">
         <div class="row">
           <div class="team-paragraph col-12">
@@ -77,75 +182,279 @@
         </div>
       </div>
     </div>
-    <div class="gallery js-flickity team-background">
-      <div class="gallery-cell">
-        <img id="myImg" src="img/6 4.png" alt="" style="width: auto" />
 
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="img01" />
-          <div class="centered">
-            <h1>Matthew Johnny Kulai</h1>
-            <p>
-              Matthew is the founder of Hinsou Farm. Growing up in a humble home
-              surrounded by nature, Matt eventually found a passion for
-              agriculture and became a young agropreneur. He specializes in
-              organic produce and manages avocado, sacha inchi and ginger
-              plantation. He also oversees a process centre for sacha inchi oil.
-            </p>
-            <p>
-              Matt was a graduate of Swansea University, with a Bachelor’s
-              degree in Materials Engineeering.
-            </p>
+    <div
+      class="gallery js-flickity"
+      data-flickity-options='{ "freeScroll": true, "wrapAround": true }'
+    >
+      <div class="gallery-cell">
+        <button
+          type="button"
+          class="btn btn-primary"
+          style=" height: 100%"
+          data-toggle="modal"
+          data-target="#exampleModal"
+        >
+          <img
+            style="max-width: 105%; max-height: 100%"
+            src="img/6 4.png"
+            alt=""
+          />
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="img/6 4.png" alt="" />
+                <div class="modal-body2">
+                  <h1>Matthew Johnny Kulai</h1>
+                  <h3>Business and Brand Developer</h3>
+                  <p>
+                    Matthew is the founder of Hinsou Farm. Growing up in a
+                    humble home surrounded by nature, Matt eventually found a
+                    passion for agriculture and became a young agropreneur. He
+                    specializes in organic produce and manages avocado, sacha
+                    inchi and ginger plantation. He also oversees a process
+                    centre for sacha inchi oil.</p><p> Matt was a graduate of Swansea
+                    University, with a Bachelor’s degree in Materials
+                    Engineeering.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div id="caption"></div>
         </div>
       </div>
       <div class="gallery-cell">
-        <img id="myImg" src="img/6 4.png" alt="" style="width: auto" />
+        <button
+          type="button"
+          class="btn btn-primary"
+          style="height: 100%; padding"
+          data-toggle="modal"
+          data-target="#xampleModal"
+        >
+          <img
+            style="max-width: 105%; max-height: 100%"
+            src="img/4 6.png"
+            alt=""
+          />
+        </button>
 
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="img01" />
-          <div class="centered">
-            <h1>Matthew Johnny Kulai</h1>
-            <p>
-              Matthew is the founder of Hinsou Farm. Growing up in a humble home
-              surrounded by nature, Matt eventually found a passion for
-              agriculture and became a young agropreneur. He specializes in
-              organic produce and manages avocado, sacha inchi and ginger
-              plantation. He also oversees a process centre for sacha inchi oil.
-            </p>
-            <p>
-              Matt was a graduate of Swansea University, with a Bachelor’s
-              degree in Materials Engineeering.
-            </p>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="xampleModal"
+          tabindex="0"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="img/4 6.png" alt="" />
+                <div class="modal-body2">
+                  <h1>Marissa Johnny Kulai</h1>
+                  <h3>Legal Advisor</h3>
+                  <p>
+                    With a degree in LLB (Hons) from UK and a Barrister-at-Law (Lincoln’s Inn) (London), Marissa is currently working as a Legal Assistant at J T Kulai and Co. Law Firm. She supports senior partners with legal research, conduct client interviews and document drafting. She is also aiding in both civil & criminal cases. With her legal expertise, she is a big support for managing AriData’s legal concerns.
+                  </p><p>
+Marissa is one of the owners of Heart Bit E-ECP, a heart treatment centre.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div id="caption"></div>
         </div>
       </div>
       <div class="gallery-cell">
-        <button>
-          <img src="img/4 6.png" alt="" />
+        <button
+          type="button"
+          class="btn btn-primary"
+          style="height: 100%; padding"
+          data-toggle="modal"
+          data-target="#ampleModal"
+        >
+          <img
+            style="max-width: 105%; max-height: 100%"
+            src="img/2 7.png"
+            alt=""
+          />
         </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="ampleModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="img/2 7.png" alt="" />
+                <div class="modal-body2">
+                  <h1>Mohd Nazri
+                    Bin Mohammad Ali</h1>
+                  <h3>Operations Manager / PR</h3>
+                  <p>
+                    Nazri’s knowledge and skills in agriculture were influenced by being a 3rd generation ginger planter starting off from his grandparents. With this, he gained vast experiences with traditional farming and grew his connections with people especially other farmers, which is why he is suited as a lead in ground operations. 
+                  </p><p>
+                    He holds a credential in E-Business and has previously worked as a manager for DJ Enterprise, a logistic company that delivers goods around Sabah. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-cell">
+        <button
+          type="button"
+          class="btn btn-primary"
+          style=" height: 100%; padding"
+          data-toggle="modal"
+          data-target="#mpleModal"
+        >
+          <img
+            style="max-width: 105%; max-height: 100%"
+            src="img/5 5.png"
+            alt=""
+          />
+        </button>
+
+        <!-- Modal -->
+        <div
+        style="width:100%; height:100%"
+          class="modal fade"
+          id="mpleModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img  src="img/5 5.png" alt="" />
+                <div class="modal-body2">
+                  <h1>Natasha Granada</h1>
+                  <h3>UI/UX Designer, 
+                    Social Media Manager</h3>
+                  <p>
+                    Having a passion for arts ever since she was a kid, Natasha fully-immersed herself in digital arts through doing Social Media Management as her business. Graphic designing, Logo-making, website designing, content creation -- she does it all. Her creativity skills also contributes to Agridata through her UI/UX Designer role.
+                  </p>
+                    <p> Her previous job was in the aviation industry, worked as a flight attendant for almost 6 years.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="gallery-cell">
-        <button>
-          <img src="img/2 7.png" alt="" />
+        <button
+          type="button"
+          class="btn btn-primary"
+          style="height: 100%; padding"
+          data-toggle="modal"
+          data-target="#eModal"
+        >
+          <img
+            style="max-width: 105%; max-height: 100%"
+            src="img/3 7.png"
+            alt=""
+          />
         </button>
-      </div>
-      <div class="gallery-cell">
-        <button>
-          <img src="img/3 7.png" alt="" />
-        </button>
-      </div>
-      <div class="gallery-cell">
-        <button>
-          <img src="img/5 5.png" alt="" />
-        </button>
-      </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="eModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="img/3 7.png" alt="" />
+                <div class="modal-body2">
+                  <h1>Jun Kaih Wong</h1>
+                  <h3>Full Stack Developer</h3>
+                  <p>
+                    Currently studying as a 3rd year student in the one of the world’s reputable universities, Nanyang Technological University Singapore, Jun Kaih’s tech skills are showcased in AgriData’s app.
+
+                    With a degree in Electrical and Electronics Engineering, he is the Head of Operations at Machine Learning and Data Analytics@EEE at present. He had also built a robotic systems at Garage@EEE, Automation and Innovation Intern at Bollore Logistics and Transport.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
     <script>
       // Get the modal
