@@ -174,7 +174,7 @@
 .prob-space {
   color: #444443;
   font-family: "Nunito Sans";
-  font-size: 25px;
+  font-size: 4vwpx;
   display: flex;
   justify-content: center;
 }
@@ -276,6 +276,10 @@
   font-family: "Nunito Sans";
   margin-top: ;
 }
+.solutions img{
+  width: 100%;
+  height: auto;
+}
 .line-in-between {
   border: 1px solid #b9b9b9;
   width: 100%;
@@ -295,7 +299,7 @@
 }
 .reposition {
   margin-top: 100px;
-  margin-left: -60px;
+  margin-left: -30px;
 }
 .footer {
   margin-top: 100px;
@@ -313,7 +317,6 @@
 }
 .footer h5 {
   font-family: "nunito sans";
-  transform: translateY(-800%);
   font-weight: 600;
   color: #696969;
 }
@@ -333,13 +336,14 @@
   display: flex;
   justify-content: center;
   text-shadow: 1px 1px 2px #696969;
+  
 }
 .team-paragraph h1 {
-  font-size: 3vw;
+  font-size: 5vw;
 }
 .team-paragraph p {
   font-weight: 600;
-  font-size: 1.5vw;
+  font-size: 2.5vw;
 }
 
 .home-allign {
@@ -621,16 +625,16 @@
 
 
 .gallery {
-  margin-top: -5%;
-  max-height: 100%;
+  margin-top: -25%;
+  max-height: 70%;
   max-width: 100%;
   display: flex;
-
+position: fixed;
 }
 
 .gallery-cell {
   width: 20%;
-  height: 30%;
+  height: 80%;
   margin-right: 10px;
   display: flex;
   justify-content: center;
@@ -638,11 +642,12 @@
 
 }
 
+
 /* cell number */
 .gallery-cell:before {
   display: block;
   text-align: center;
-  line-height: 200px;
+  line-height: 100px;
   font-size: 80px;
   color: white;
 }
@@ -665,16 +670,160 @@
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
-  width: 65%; /* Full width */
-  height: 40%; /* Full height */
+  width: 70%; /* Full width */
+  height: 60%; /* Full height */
   overflow: hidden; /* Enable scroll if needed */
   background-image: linear-gradient(to right, white, #cbeaff);
-  transform: translateY(-50%) translateX(-25%);
-  overflow: auto;
+  top: 20%;
+  left: 15%;
+}
+.close {
+  transform: translateX(100%);
+  position: relative;
+  top: 15px;
+  right: 35px;
+  color: #444443;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 1;
 }
 
 
+@media  (max-width:1400px) {
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 70%; /* Full width */
+    height: 50%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-image: linear-gradient(to right, white, #cbeaff);
+    top: 20%;
+    left: 15%;
+  }
+  
+  .close {
+    transform: translateX(100%);
+    position: relative;
+    top: 15px;
+    right: 30px;
+    color: #444443;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 1;
+  }
+}
 
+@media  (max-width:1200px) {
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 70%; /* Full width */
+    height: 40%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-image: linear-gradient(to right, white, #cbeaff);
+    top: 20%;
+    left: 15%;
+  }
+  
+  .close {
+    transform: translateX(100%);
+    position: relative;
+    top: 15px;
+    right: 25px;
+    color: #444443;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 1;
+  }
+
+}
+@media  (max-width:950px) {
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 70%; /* Full width */
+    height: 30%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-image: linear-gradient(to right, white, #cbeaff);
+    top: 20%;
+    left: 15%;
+  }
+  .close {
+    transform: translateX(100%);
+    position: relative;
+    top: 15px;
+    right: 20px;
+    color: #444443;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 1;
+  }
+}
+@media  (max-width:700px) {
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 70%; /* Full width */
+    height: 20%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-image: linear-gradient(to right, white, #cbeaff);
+    top: 20%;
+    left: 15%;
+  }
+  .close {
+    transform: translateX(100%);
+    position: relative;
+    top: 15px;
+    right: 10px;
+    color: #444443;
+    font-size: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 1;
+  }
+}
+@media  (max-width:400px) {
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 70%; /* Full width */
+    height: 17%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-image: linear-gradient(to right, white, #cbeaff);
+    top: 20%;
+    left: 15%;
+  }
+  .close {
+    transform: translateX(100%);
+    position: relative;
+    top: 15px;
+    right: 10px;
+    color: #444443;
+    font-size: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 1;
+  }
+}
 /* Modal Content (image) */
 .modal-content {
   margin: auto;
@@ -755,17 +904,7 @@ background: transparent;
 }
 
 /* The Close Button */
-.close {
-  transform: translateX(100%);
-  position: relative;
-  top: 15px;
-  right: 35px;
-  color: #444443;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-  z-index: 1;
-}
+
 
 .close:hover,
 .close:focus {
