@@ -67,7 +67,7 @@
 }
 .para1 h1 {
   font-family: "Nunito Sans";
-  font-size: 45px;
+  font-size: 5vw;
   color: #444443;
   text-shadow: 2px 2px 2px #454545;
 }
@@ -75,7 +75,7 @@
   font-family: "Nunito Sans";
 
   color: #444443;
-  font-size: 25px;
+  font-size: 3vw;
   justify-content: center;
   display: flex;
   text-align: justify;
@@ -83,7 +83,7 @@
 }
 .para1 h5 {
   font-family: "Nunito Sans";
-  font-size: 15px;
+  font-size: 2.5vw;
   color: #444443;
   justify-content: center;
   display: flex;
@@ -133,6 +133,21 @@
   font-family: "Nunito Sans";
   text-align: end;
   font-size: 3vw;
+}
+@media (max-width:600px) {
+  .vision2 h3{
+    font-size:16px;
+  }
+  .para1 h1{
+    font-size: 30px;
+  }
+  .para1 h4{
+    font-size: 18px;
+  }
+  .para1 h5{
+    font-size: 15px;
+  }
+  
 }
 .vision2 p {
   font-weight: lighter;
@@ -754,7 +769,7 @@ position: fixed;
     left: 0;
     top: 0;
     width: 70%; /* Full width */
-    height: 30%; /* Full height */
+    height: 40%; /* Full height */
     overflow: hidden; /* Enable scroll if needed */
     background-image: linear-gradient(to right, white, #cbeaff);
     top: 20%;
@@ -780,7 +795,7 @@ position: fixed;
     left: 0;
     top: 0;
     width: 70%; /* Full width */
-    height: 20%; /* Full height */
+    height: 30%; /* Full height */
     overflow: hidden; /* Enable scroll if needed */
     background-image: linear-gradient(to right, white, #cbeaff);
     top: 20%;
@@ -806,7 +821,7 @@ position: fixed;
     left: 0;
     top: 0;
     width: 70%; /* Full width */
-    height: 17%; /* Full height */
+    height: 20%; /* Full height */
     overflow: hidden; /* Enable scroll if needed */
     background-image: linear-gradient(to right, white, #cbeaff);
     top: 20%;
@@ -831,7 +846,7 @@ position: fixed;
   border: transparent;
 }
 .modal-body2 h1{
-  color: #000000;
+  color:;
   font-family: "nunito sans";
   font-weight: 800;
   font-size: 1.4vw;
@@ -865,8 +880,27 @@ position: fixed;
   width: 50%;
   background-color: #E9F7FF ;
   margin:0;
+  transform: translateY(-10%);
 }
-
+@media (max-width:950px) {
+  .modal-body2{
+    transform: translateY(-10%);
+  }
+  
+}
+@media (max-width:700px) {
+  .modal-body2{
+    padding-left: 1%;
+  }
+  
+}
+@media (max-width:400px) {
+  .modal-body2{
+    padding-left: 2%
+  }
+  
+  
+}
 .btn{
   border: transparent;
 background: transparent;
